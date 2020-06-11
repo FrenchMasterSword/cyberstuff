@@ -4,7 +4,7 @@ Because I have no idea what I'm doing.
 
 Shell is denoted by starting with `$ `, or `# ` if escalated.
 
-###### netcat
+### netcat
 
 TCP by default (which is a good default); `-u`/`--udp` to change to UDP
 
@@ -18,7 +18,7 @@ Listen on port `12000`
 $ nc -l -p port
 ```
 
-###### xxd
+### xxd
 
 Convert binary to hex and conversely
 
@@ -33,7 +33,7 @@ Hex to binary
 $ xxd -r file.hex file.bin
 ```
 
-###### Tools as useful or even more, but not worth explaining here:
+### Tools as useful or even more, but not worth explaining here:
 
 * `file`: detect filetype
 * `binwalk`: detect actual files contained in a given file and extract them
@@ -42,7 +42,7 @@ $ xxd -r file.hex file.bin
 * `exiftool`: gather information about a given file, depending of its type
 * [`CyberChef`](https://gchq.github.io/CyberChef) helps with efficiently decoding stuff, with notably a tool, Magic, good at guessing
 
-###### RSA
+### RSA
 
 Assymetric system
 
@@ -56,7 +56,7 @@ Assymetric system
 The public key is comprised of `n` and `e`
 The private key is comprised of `n` and `d`
 
-      The actual nature (definition) of the keys might vary ; but these are what each person need to
+      The actual nature (definition) of the keys might vary ; but these are what each person needs to
       encrypt and decrypt:
 
 If you name `P` the plain text of the message you intend to encrypt, and `C` its encrypted counterpart:
@@ -85,7 +85,7 @@ P = pow(C, d, n)
 
 ```
 
-###### Base64
+### Base64
 
 Base64 is commonly used to encode data in ASCII. It uses the alphabet in uppercase,
 in lowercase, digits from `0` to `9`, and the `+` and `/` characters ; additionally it appends
@@ -96,7 +96,7 @@ Base32 is sometimes encountered. Similarly, it only uses the uppercase alphabet 
 
 A base64 character represents 6 bits ; A base32 character represents 5 bits.
 
-###### Automated tools for 'ancient crypto'
+### Automated tools for 'ancient crypto'
 
 * [Pretty accurate tool to determine the cipher](https://bionsgadgets.appspot.com/gadget_forms/refscore_extended.html)
 * [Other one, providing some auto-solvers](https://www.boxentriq.com/code-breaking/cipher-identifier)
@@ -114,7 +114,7 @@ or a monoalphabetic substitution.
 The further it is from this value the more likely it is to actually be a polyalphabetic cipher,
 with more alphabets being used as the IC decreases.
 
-The IC of English is 0.0667 (others are on the webpage). The same page uses this IC test
+The IC of English is `0.0667` (others are on the webpage). The same page uses this IC test
 at periodic places to help determine the probable length of the key.
 
 Frequency analysis is another helpful tool notably for substitution ciphers.
