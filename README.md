@@ -118,3 +118,13 @@ The IC of English is `0.0667` (others are on the webpage). The same page uses th
 at periodic places to help determine the probable length of the key.
 
 Frequency analysis is another helpful tool notably for substitution ciphers.
+
+### Binaries
+
+ELF is a linux binary, PE is a Windows binary
+
+* `strings`: display all readable strings in a file
+* `ltrace <file>`: show library calls done while executing the file.
+* `strace <file>`: show system calls done while executing the file.
+* `gdb`: debug binary
+* [`peda`](https://github.com/longld/peda): might improve gdb friendliness, especially to show state, though it might be slow
